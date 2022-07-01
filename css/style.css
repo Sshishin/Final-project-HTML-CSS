@@ -2,22 +2,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --backgroud-color: pink;
+    --img-color: gray;
+    --btn-color: black;
+    --padding-in-container:0 20px;
+}
+
 body {
-    background-color: antiquewhite;
-}
-
---padding-left-from-container {
-    padding-left:20px;
-}
-
---padding-right-from-container {
-    padding-right:20px;
+    
 }
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
-    background-color: aliceblue;
+    background-color: white;
     padding: 0 50px;
 }
 
@@ -27,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: var(--padding-in-container);
 }
 
 .logo {
@@ -36,20 +35,72 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left:var(--padding-left-from-container);
 }
 .navigation-list {
 }
 .navigation__list {
     display: flex;
     justify-content: space-between;
-    padding-right:var(--padding-right-from-container);
     list-style: none;
+    margin-bottom: 0;
 }
+
+
+
 .navigation-list__item:not(:last-child) {
     margin-right: 25px;
 }
 
+.menu:hover .menu-dropdown,
+.delivery:hover .delivery-dropdown,
+.contacts-nav:hover .contacts-nav-dropdown,
+.backet:hover .backet-dropdown  {
+    display: block;
+}
+
+.menu,
+.delivery,
+.contacts-nav,
+.backet {
+    position: relative;
+    height: 30px;
+}
+
+.menu-dropdown,
+.delivery-dropdown,
+.contacts-nav-dropdown,
+.backet-dropdown {
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    list-style: none;
+    padding: 0px;
+    width: 122px;
+    background-color: blanchedalmond;
+    line-height: 20px;
+    display: none;
+    z-index: 1;
+}
+
+.menu-dropdown__item,
+.delivery-dropdown__item,
+.contacts-nav-dropdown__item,
+.backet-dropdown__item {
+    border: 1px solid coral;
+    background-color: darkkhaki;
+}
+
+.menu-dropdown__item:hover,
+.delivery-dropdown__item:hover,
+.contacts-nav-dropdown__item:hover,
+.backet-dropdown__item:hover {
+    background-color: darkturquoise;
+}
+
+.btn-li {
+    width: 100%;
+}
+    
 .hero-wrapper {
 }
 
@@ -60,11 +111,11 @@ body {
 .hero__text {
     flex: 1;
     background-color: darkkhaki;
-    padding: 0 20px;
+    padding: var(--padding-in-container);
 }
 
 .hero-text__button {
-    background-color: red;
+    background-color: var(--btn-color);
     text-decoration: none;
     width: 200px;
     height: 50px;
@@ -73,6 +124,7 @@ body {
     color: black;
 }
 
+
 .hero__img-background {
     flex: 1;
     background-color:darksalmon;
@@ -80,16 +132,21 @@ body {
     justify-content: flex-end;
 }
 .hero__img {
-    background-color: black;
+    background-color: var(--img-color);
     width: 400px;
     height: 300px;
     position: relative;
     left: 50px;
     top: 50px;
+    background-image: url(../img/nb.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-wrapper {
     height: 400px;
+    background-color: var(--backgroud-color);
 }
 .products {
 }
@@ -106,18 +163,20 @@ body {
     justify-content: space-between;
     list-style: none;
     padding: 0;
+    transform: scale(1.093);
 }
 .products-list__item {
-    background-color: blue;
+    background-color: var(--img-color);
     width: 200px;
     height: 200px;
+    
 }
 
 .container {
 }
 .info-wrapper {
     height: 400px;
-    background-color: lightskyblue;
+    background-color: var(--backgroud-color);
 }
 .info {
     display: flex;
@@ -128,7 +187,7 @@ body {
 .info-img__wrapper {
     width: 400px;
     height: 300px;
-    background-color: aquamarine;
+    background-color: var(--img-color);
     position: relative;
     right: 50px;
     top: 50px;
@@ -136,17 +195,19 @@ body {
 
 .info__img {
 }
+
 .info__text-wrapper {
     display: flex;
     width: 400px;
     flex-direction: column;
     justify-content: space-around;
+    padding: var(--padding-in-container);
     
 }
 
 .sale-input-wrapper {
     height: 400px;
-    background-color: tan;
+    background-color: var(--backgroud-color);
 }
 .sale-input {
     display: flex;
@@ -169,6 +230,7 @@ body {
     align-content: stretch;
     justify-content: space-evenly;
     align-items: center;
+    padding: var(--padding-in-container);
 }
 
 .name {
@@ -189,7 +251,7 @@ body {
 
 .map-wrapper {
     height: 400px;
-    background-color: blueviolet;
+    background-color: var(--backgroud-color);
 }
 .map {
     display: flex;
@@ -204,7 +266,8 @@ body {
 
 .contacts-wrapper {
     height: 400px;
-    background-color: bisque;
+    background-color: var(--backgroud-color);
+    padding: var(--padding-in-container);
 }
 .contacts {
     display: grid;

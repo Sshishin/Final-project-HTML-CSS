@@ -15,10 +15,35 @@
                 <div class="navigation__wrapper">
                     <div class="logo navigation__logo">Logo</div>
                     <ul class="navigation-list navigation__list">
-                        <li class="navigation-list__item">Меню</li>
-                        <li class="navigation-list__item">Доставка</li>
-                        <li class="navigation-list__item">Контакты</li>
-                        <li class="navigation-list__item">Корзина</li>
+                        <li class="menu navigation-list__item">Меню
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown__item"><a href="../Webovio/index.html" type="button" class="btn-li first">dropone</a></li>
+                                <li class="menu-dropdown__item"><a href="../Grid,flex,BEM/index.html" type="button" class="btn-li second">dropsecond</a></li>
+                                <li class="menu-dropdown__item"><a href="C:\Users\shish\Desktop\Development\Projects (HTML+CSS)\Training\Animation\index.html" type="button" class="btn-li three">dropthree</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="delivery navigation-list__item">Доставка
+                            <ul class="delivery-dropdown">
+                                <li class="delivery-dropdown__item"><a href="C:\Users\shish\Desktop\Development\Projects (HTML+CSS)\Training\Bootstrap5\index.html" type="button" class="btn-li first">dropone</a></li>
+                                <li class="delivery-dropdown__item"><a href="C:\Users\shish\Desktop\Development\Projects (HTML+CSS)\Training\Flexbox-training\index.html" type="button" class="btn-li second">dropsecond</a></li>
+                                <li class="delivery-dropdown__item"><a href="C:\Users\shish\Desktop\Development\Projects (HTML+CSS)\Training\Grid-training\index.html" type="button" class="btn-li three">dropthree</a></li>
+                            </ul>
+                        </li>
+                        <li class="contacts-nav navigation-list__item">Контакты
+                            <ul class="contacts-nav-dropdown">
+                                <li class="contacts-nav-dropdown__item"><a href="C:\Users\shish\Desktop\Development\Projects (HTML+CSS)\Training\Portfolio\index.html" type="button" class="btn-li first">dropone</a></li>
+                                <li class="contacts-nav-dropdown__item"><a href="C:\Users\shish\Desktop\Development\Projects (HTML+CSS)\Training\Responsive-training\index.html" type="button" class="btn-li second">dropsecond</a></li>
+                                <li class="contacts-nav-dropdown__item"><a href="C:\Users\shish\Desktop\Development\Projects (HTML+CSS)\Training\Variable\index.html" type="button" class="btn-li three">dropthree</a></li>
+                            </ul>
+                        </li>
+                        <li class="backet navigation-list__item">Корзина
+                            <ul class="backet-dropdown">
+                                <li class="backet-dropdown__item"><a href="#first" type="button" class="btn-li first">dropone</a></li>
+                                <li class="backet-dropdown__item"><a href="#second" type="button" class="btn-li second">dropsecond</a></li>
+                                <li class="backet-dropdown__item"><a href="#three" type="button" class="btn-li three">dropthree</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -56,9 +81,9 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="info-wrapper">
-                <div class="info">
+        <div class="container" id="first"> <!--Experemental-->
+            <div class="info-wrapper" id="second">
+                <div class="info" id="three">
                     <div class="info-img__wrapper">fsfdsdf
                         <img src="" alt="" class="info__img">
                     </div>
@@ -81,11 +106,12 @@
                         <h2>Покупай</h2>
                         <form class="form">
                             <div class="name"><label for="pin">Введите пинкод</label>
-                            <input type="passwor" id="pi" placeholder="1234"></div>
+                            <input type="password" id="pi" placeholder="1234"></div>
                             <div class="surname"><label for="pin">Введите пинкод</label>
-                            <input type="passwor" id="pi" placeholder="1234"></div>
+                            <input type="password" id="pi" placeholder="1234"></div>
                             <div class="number"><label for="pin">Введите пинкод</label>
-                            <input type="passwor" id="pi" placeholder="1234"></div>
+                            <input type="password" id="pi" placeholder="1234"></div>
+                            <button type="submit">Заказать</button>
                         </form>
                     </div>
                     <div class="video-wrapper sale-input__video-wrapper">
@@ -102,6 +128,7 @@
                 </div>
             </div>
         </div>
+    </main>
         <footer>
             <div class="container">
                 <div class="contacts-wrapper">
@@ -158,6 +185,5 @@
                 </div>
             </div>
         </footer>
-    </main>
 </body>
 </html>
