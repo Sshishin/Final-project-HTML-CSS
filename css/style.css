@@ -5,8 +5,11 @@
 :root {
     --backgroud-color: pink;
     --img-color: gray;
-    --btn-color: black;
-    --padding-in-container:0 20px;
+    --btn-color: #FE253F;
+    --padding-in-container:0 30px;
+    --yellow-bg: #FEC600;
+    --shadow-btn: 0 10px 20px 0 #0000005e;
+    --shadow-block: 0 30px 30px 0 #0000006e;
 }
 
 body {
@@ -14,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: white;
     padding: 0 50px;
@@ -22,28 +25,55 @@ body {
 
 .navigation__wrapper {
     width: 100%;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--padding-in-container);
+    padding: 0;
 }
 
-.logo {
+.logo-img {
+    padding-left: 30px;
+    font-size: 50px;
 }
 .navigation__logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex: 4;
+    height: 75px;
+    background-color: #d10b85;
 }
+
+.logo-delivery {
+    font-size: 50px;
+    position: absolute;
+    top: 50px;
+    left: 260px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .navigation-list {
+    background-color: var(--yellow-bg);
+    list-style: none;
+    z-index: 2;
 }
+
 .navigation__list {
     display: flex;
     justify-content: space-between;
-    list-style: none;
     margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    height: 75px;
+    padding: 0;
+    flex: 5;
+    align-items: center;
 }
+
 
 
 
@@ -106,42 +136,80 @@ body {
 
 .hero {
     display: flex;
-    height: 400px;
+    height: 800px;
+    justify-content: space-between;
+    background-color: #d10b85;
 }
+
+.wrapper-hero-text {
+    display: flex;
+    flex: 4;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero__text {
-    flex: 1;
-    background-color: darkkhaki;
+    width: 70%;
+    height: 550px;
+    background-color:  var(--yellow-bg);
     padding: var(--padding-in-container);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--shadow-block);
+}
+
+.hero-text__title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.hero-text__subtitle {
+    font-size: 20px;
 }
 
 .hero-text__button {
     background-color: var(--btn-color);
     text-decoration: none;
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 60px;
     font-size: 32px;
     text-align: center;
-    color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow-btn);
 }
 
+.wrapper-img-bg {
+    flex: 5;
+    z-index: 1;
+}
 
 .hero__img-background {
-    flex: 1;
-    background-color:darksalmon;
+    background-color:  var(--yellow-bg);
     display: flex;
     justify-content: flex-end;
+    height: 677px;
+    align-items: center;
+    border-radius: 0 0 0 30px;
+    box-shadow: var(--shadow-block);
 }
+
 .hero__img {
-    background-color: var(--img-color);
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: 65%;
     position: relative;
-    left: 50px;
-    top: 50px;
-    background-image: url(../img/nb.jpg);
+    left: 20%;
+    background-image: url(../img/tutburger-png-01.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 .product-wrapper {
