@@ -15,7 +15,7 @@
                 <div class="navigation__wrapper">
                     <div class="logo navigation__logo">
                         <div class="logo-img">Logo</div>
-                        <div class="logo-delivery">Доставка</div>
+                        <!-- <div class="logo-delivery">Доставка</div> -->
                     </div>
                     <ul class="navigation-list navigation__list">
                         <li class="menu navigation-list__item">Меню
@@ -61,7 +61,7 @@
                             <h1 class="hero-text__title">Закажи <br> сейчас</h1> 
                             <p class="hero-text__subtitle">Мы разработали лучшие суши. <br> <br> Это правда супер-пупер крутые суши и если ты реальный гэнстер, то ты должен это попробовать. <br> <br> А если нет то пошел ты!</p>
 
-                            <a href="" type="button" class="hero-text__button">Заказать</a>
+                            <a href="" type="button" class="hero-text__button btn">Заказать</a>
                         </div>
                     </div>
                     <div class="wrapper-img-bg">
@@ -96,13 +96,11 @@
                         <img src="" alt="" class="info__img">
                     </div>
                     <div class="info__text-wrapper">
-                        <h2>Посмотри</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur ullam vel, distinctio eaque exercitationem 
-                            voluptatibus temporibus explicabo asperiores, tempora amet molestiae id illo ipsa inventore.
-                        
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur ullam vel, distinctio eaque exercitationem 
-                            voluptatibus temporibus explicabo asperiores, tempora amet molestiae id illo ipsa inventore.
+                        <h2 class="info__text-title">Кушай только свежее</h2>
+                        <p class="info__text-subtitle">Мы закупаем мясо напрямую у фермеров без посредников, поэтому у нас всегда самые свежие ингридиенты 
+                        и лучшие цены!
                         </p>
+                        <a href="" type="button" class="info-text__button btn">Заказать</a>
                     </div>
                 </div>
             </div>
@@ -111,29 +109,33 @@
             <div class="sale-input-wrapper">
                 <div class="sale-input">
                     <div class="input-wrapper sale-input__input-wrapper">
-                        <h2>Покупай</h2>
+                        <h2 class="input-wrapper__title">Хочешь у нас работать?</h2>
+                        <p class="input-wrapper__subtitle">Оставь заявку и мы тебе перезвоним.</p>
                         <form class="form">
-                            <div class="name"><label for="pin">Введите пинкод</label>
-                            <input type="password" id="pi" placeholder="1234"></div>
-                            <div class="surname"><label for="pin">Введите пинкод</label>
-                            <input type="password" id="pi" placeholder="1234"></div>
-                            <div class="number"><label for="pin">Введите пинкод</label>
-                            <input type="password" id="pi" placeholder="1234"></div>
-                            <button type="submit">Заказать</button>
+                            <div class="name item-form"><label for="pin"></label>
+                            <input type="password" class="input-form" id="pi" placeholder="1234"></div>
+                            <div class="surname item-form"><label for="pin"></label>
+                            <input type="password" class="input-form"  id="pi" placeholder="1234"></div>
+                            <div class="number item-form"><label for="pin"></label>
+                            <input type="password" class="input-form"  id="pi" placeholder="1234"></div>
+                            <button type="submit" class="btn btn--submit">Заказать</button>
                         </form>
                     </div>
                     <div class="video-wrapper sale-input__video-wrapper">
-                        <iframe width="400" height="300" src="https://www.youtube.com/embed/sv3TXMSv6Lw?autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+                        <iframe class="frame" width="600" height="550" src="https://www.youtube.com/embed/sv3TXMSv6Lw?autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
                     </div>                    
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="map-wrapper">
+                <h2 class="map__title">Нас очень просто найти</h2> 
                 <div class="map">
-                     <h2>Как нас найти</h2> 
+                     
                      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143710.51118917885!2d37.49505526120024!3d55.75022018689934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ae24b915bf5%3A0x75182b2bb009dd69!2z0K_QvdC00LXQutGBLtC00YDQsNC50LI!5e0!3m2!1sru!2sru!4v1656503542269!5m2!1sru!2sru" width="1000" height="256.41" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+                    
                 </div>
+                <p class="map__text">Возле магазин “Линия”. Вход через правую поперечную дверь от ул.Южная, дом 77</p>
             </div>
         </div>
     </main>

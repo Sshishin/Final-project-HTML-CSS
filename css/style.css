@@ -50,11 +50,21 @@
     --btn-color: #FE253F;
     --padding-in-container:0 30px;
     --yellow-bg: #FEC600;
+    --purple-main: #DA0E8A;
     --shadow-btn: 0 10px 20px 0 #0000005e;
     --shadow-block: 0 30px 30px 0 #0000006e;
+    --shadow-form: 0px 20px 30px 5px rgb(0 0 0 / 30%);
     --width-card: 300px;
     --height-card: 300px;
     --shadow-hero: 0px 10px 30px 5px rgb(0 0 0 / 35%);
+    --light-font: "Inter-LightBETA";
+    --regular-font: "Inter-Regular";
+    --medium-font: "Inter-Medium";
+    --semiBold-font: "Inter-SemiBold";
+    --bold-font: "Inter-Bold";
+    --black-font: "Inter-Black";
+
+
 }
 
 body {
@@ -225,7 +235,7 @@ body {
     font-family: 'Inter-Regular';
 }
 
-.hero-text__button {
+.btn {
     background-color: var(--btn-color);
     text-decoration: none;
     width: 180px;
@@ -238,6 +248,14 @@ body {
     align-items: center;
     box-shadow: var(--shadow-btn);
     font-family: 'Inter-Regular';
+}
+
+.btn--submit {
+    border: none;
+}
+
+.hero-text__button {
+    
 }
 
 .wrapper-img-bg {
@@ -268,23 +286,25 @@ body {
 }
 
 .product-wrapper {
-    height: 800px;
+    height: 900px;
     background-color: white;
 }
 .products {
 }
 
 .products__title {
+    font-family: var(--bold-font);
     text-align: center;
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 0;
     padding-top: 100px;
-    font-size: 72px;
+    font-size: 60px;
 }
 
 .products__subtitle {
+    font-family: var(--light-font);
     text-align: center;
     margin: 0;
-    margin-bottom: 75px;
+    margin-bottom: 100px;
     font-size: 40px;
 }
 
@@ -295,7 +315,7 @@ body {
     justify-content: space-between;
     list-style: none;
     padding: 0;
-    transform: scale(1.093);
+    transform: scale(1.193);
 }
 .products-list__item {
     background-color: var(--img-color);
@@ -338,62 +358,131 @@ body {
 .container {
 }
 .info-wrapper {
-    height: 400px;
-    background-color: var(--backgroud-color);
+    height: 900px;
+    background-color: white;
 }
 .info {
     display: flex;
     height: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .info-img__wrapper {
-    width: 400px;
-    height: 300px;
-    background-color: var(--img-color);
+    width: 600px;
+    height: 550px;
     position: relative;
-    right: 50px;
-    top: 50px;
+    right: 10%;
+}
+
+.info__text-title {
+    font-size: 36px;
+    font-family: var(--bold-font);
+}
+
+.info__text-subtitle {
+    font-size: 28px;
+    font-family: var(--regular-font);
+    margin-bottom: 60px;
 }
 
 .info__img {
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-main);
+    right: 10%;
+    border-radius: 50px;
+    box-shadow: var(--shadow-hero);
 }
 
 .info__text-wrapper {
     display: flex;
-    width: 400px;
     flex-direction: column;
-    justify-content: space-around;
-    padding: var(--padding-in-container);
+    justify-content: space-evenly;
+    padding-right: 50px;
+    align-items: center;
+    flex: 2;
+    font-size: 20px;
+    text-align: center;
     
 }
 
 .sale-input-wrapper {
-    height: 400px;
-    background-color: var(--backgroud-color);
+    height: 900px;
+    background-color: white;
 }
 .sale-input {
     display: flex;
     height: 100%;
     justify-content: space-between;
+    align-items: center;
 }
+
 .video-wrapper {
     
 }
+
+.frame {
+    border-radius: 30px;
+    box-shadow: var(--shadow-block);
+}
+
 .sale-input__video-wrapper {
     position: relative;
-    left: 50px;
-    top: 50px;
+    left: 10%;
+    display: flex;
+    align-items: center;
 }
+
 .input-wrapper {
-}
-.sale-input__input-wrapper {
+    height: 550px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
-    align-content: stretch;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    border-radius: 30px;
+    box-shadow: var(--shadow-form);
+}
+
+.sale-input__input-wrapper {
     padding: var(--padding-in-container);
+}
+
+.input-wrapper__title {
+    font-size: 32px;
+    font-family: var(--bold-font);
+    text-align: center;
+    margin: 0;
+}
+
+.input-wrapper__subtitle {
+    font-size: 22px;
+    font-family: var(--light-font);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-form {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
 }
 
 .name {
@@ -410,11 +499,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .map-wrapper {
-    height: 400px;
-    background-color: var(--backgroud-color);
+    height: 900px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
 }
 .map {
     display: flex;
@@ -424,7 +519,23 @@ body {
 }
 
 .map__iframe {
-    transform: scale(1.17);
+    transform: scale(1.37);
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: var(--shadow-hero);
+    border: 0;
+    margin: 100px 0 60px 0;
+}
+
+.map__title {
+    font-size: 48px;
+    font-family: var(--bold-font);
+}
+
+.map__text {
+    font-size: 32px;
+    text-align: center;
+    font-family: var(--light-font);
 }
 
 .contacts-wrapper {
@@ -473,3 +584,4 @@ body {
 1.Закончить объявление шрифтов
 2.Разделить блоки и элементы (Позиционирование и оформление)
 3.В целом привести к БЭМ стандарту
+4.Проставить нормальные тени
