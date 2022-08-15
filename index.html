@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="navigation__wrapper">
                     <div class="logo navigation__logo">
-                        <div class="logo-img">Logo</div>
+                        <div class="logo-img">СЫТЫЙ <br> ГРАЖДАНИН </div>
                         <!-- <div class="logo-delivery">Доставка</div> -->
                     </div>
                     <ul class="navigation-list navigation__list">
@@ -40,12 +40,8 @@
                                 <li class="contacts-nav-dropdown__item"><a href="C:\Users\shish\Desktop\Development\Projects (HTML+CSS)\Training\Variable\index.html" type="button" class="btn-li three">dropthree</a></li>
                             </ul>
                         </li>
-                        <li class="backet navigation-list__item">Корзина
-                            <ul class="backet-dropdown">
-                                <li class="backet-dropdown__item"><a href="#first" type="button" class="btn-li first">dropone</a></li>
-                                <li class="backet-dropdown__item"><a href="#second" type="button" class="btn-li second">dropsecond</a></li>
-                                <li class="backet-dropdown__item"><a href="#three" type="button" class="btn-li three">dropthree</a></li>
-                            </ul>
+                        <li class="backet navigation-list__item">
+                            <img class="backet__img" src="./img/shopping-bag.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -66,9 +62,11 @@
                     </div>
                     <div class="wrapper-img-bg">
                         <div class="hero__img-background">
-                            <div class="hero__img">
+                            
+                                <div class="hero__gradient">
+                                    <div class="hero__img"></div>
+                                </div>
 
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,8 +90,8 @@
         <div class="container" id="first"> <!--Experemental-->
             <div class="info-wrapper" id="second">
                 <div class="info" id="three">
-                    <div class="info-img__wrapper">fsfdsdf
-                        <img src="" alt="" class="info__img">
+                    <div class="info-img__wrapper">
+                        <div class="info__img"></div>
                     </div>
                     <div class="info__text-wrapper">
                         <h2 class="info__text-title">Кушай только свежее</h2>
@@ -113,11 +111,11 @@
                         <p class="input-wrapper__subtitle">Оставь заявку и мы тебе перезвоним.</p>
                         <form class="form">
                             <div class="name item-form"><label for="pin"></label>
-                            <input type="password" class="input-form" id="pi" placeholder="1234"></div>
+                            <input type="password" class="input-form" id="pi" placeholder="Иван"></div>
                             <div class="surname item-form"><label for="pin"></label>
-                            <input type="password" class="input-form"  id="pi" placeholder="1234"></div>
+                            <input type="password" class="input-form"  id="pi" placeholder="Васильевич"></div>
                             <div class="number item-form"><label for="pin"></label>
-                            <input type="password" class="input-form"  id="pi" placeholder="1234"></div>
+                            <input type="password" class="input-form"  id="pi" placeholder="+7-900-555-60-70"></div>
                             <button type="submit" class="btn btn--submit">Заказать</button>
                         </form>
                     </div>
@@ -143,51 +141,43 @@
             <div class="container">
                 <div class="contacts-wrapper">
                     <div class="contacts">
-                         <div class="about contacts__about">
-                            <h3>О нас</h3>
+                         <div class="about contacts__about contacts__item">
+                            <h3 class="contacts__title" >О нас</h3>
                             <div class="list about__list">
                                 <ul class="about-list list__wrapper">
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
+                                    <li class="about-list__item">Доставка</li>
+                                    <li class="about-list__item">Работа</li>
+                                    <li class="about-list__item">Контакты</li>
                                 </ul>
                             </div>
                          </div>
-                         <div class="contacts__order">
-                            <h3>Заказать</h3>
+                         <div class="contacts__order contacts__item">
+                            <h3 class="contacts__title">Партнерам</h3>
                             <div class="list about__list">
                                 <ul class="about-list list__wrapper">
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
+                                    <li class="about-list__item">Франшиза</li>
+                                    <li class="about-list__item">Поставщикам</li>
+                                    <li class="about-list__item">Предложить помещение</li>
+                                    <li class="about-list__item">Инвестиции</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="contacts__app">
-                            <h3>Приложение</h3>
+                        <div class="contacts__app contacts__item">
+                            <h3 class="contacts__title">Следите</h3>
                             <div class="list about__list">
                                 <ul class="about-list list__wrapper">
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
+                                    <li class="about-list__item">VK</li>
+                                    <li class="about-list__item">Instagram</li>
+                                    <li class="about-list__item">Tik Tok</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="contacts__social">
-                            <h3>Подпишись</h3>
+                        <div class="contacts__social contacts__item">
+                            <h3 class="contacts__title">Приложения</h3>
                             <div class="list about__list">
                                 <ul class="about-list list__wrapper">
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
-                                    <li class="about-list__item">Lorem.</li>
+                                    <li class="about-list__item about-list__item--app">Google Play</li>
+                                    <li class="about-list__item about-list__item--app">App Store</li>
                                 </ul>
                             </div>
                         </div>
